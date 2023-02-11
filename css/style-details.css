@@ -1,0 +1,49 @@
+.dt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.dt-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 65rem;
+  margin: 1rem 0;
+  color: var(--black);
+  text-align: justify;
+}
+
+.dt-img {
+  max-width: 1000px;
+  height: 1000px;
+  border-radius: 100px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.dt-img img {
+  width: 100%;
+  display: block;
+}
+
+.dt-content ul {
+  list-style: none;
+  padding: 0 1.5rem;
+}
+
+.dt-content ol {
+  list-style: decimal;
+  padding: 0 1.5rem;
+}
+
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+  .dt-img {
+    width: 100%;
+    aspect-ratio: 2/1;
+  }
+}
